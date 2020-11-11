@@ -1,29 +1,31 @@
-###Alguns dos assuntos abordados:
+# Java Completo - Cod3r
 
-Algoritmo e Estrutura de Dados
+### Alguns dos assuntos abordados:
 
-Fundamentos da Linguagem Java
+- Algoritmo e Estrutura de Dados
 
-Estruturas de Controle
+- Fundamentos da Linguagem Java
 
-Classes, Objetos, Métodos
+- Estruturas de Controle
 
-Orientação a Objeto
+- Classes, Objetos, Métodos
 
-Encapsulamento, Herança, Polimorfismo e Abstração
+- Orientação a Objeto
 
-Lambdas
+- Encapsulamento, Herança, Polimorfismo e Abstração
 
-Stream API
+- Lambdas
 
-Tratamento de Exceções
+- Stream API
 
-JavaFX
+- Tratamento de Exceções
 
-Banco de Dados Relacional
+- JavaFX
 
-Bando de Dados NÃO Relacional (NoSQL)
+- Banco de Dados Relacional
 
-JPA (Hibernate)
+- Bando de Dados NÃO Relacional (NoSQL)
 
-Spring Boot
+- JPA (Hibernate)
+
+- Spring Boot
