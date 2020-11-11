@@ -5,7 +5,7 @@ public class Carro {
 	final Motor motor;
 	
 	Carro() {
-		// Relação bidirecional: um carro tem um motor \
+		// Relacao bidirecional: um carro tem um motor \
 		// e esse motor pertence a um carro
 		this.motor = new Motor(this);
 	}
