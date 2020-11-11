@@ -3,24 +3,23 @@ package oo.composicao;
 import java.util.ArrayList;
 
 public class Compra {
-    String cliente;
-    ArrayList<Item> items = new ArrayList<>();
 
-    void adicionarItem(String nome, int quantidade, double preco) {
-        this.adicionarItem(new Item(nome, quantidade, preco));
-    }
-
-    void adicionarItem(Item item) {
-        items.add(item);
-        item.compra = this;
-    }
-
-    double getValorTotal() {
-        double total = 0;
-        for (Item item : items) {
-            total += item.quantidade * item.preco;
-        }
-        return total;
-    }
-
+	ArrayList<Item> itens = new ArrayList<Item>();
+	String cliente;
+	
+	void adicionarItem(String nome, int quantidade, double preco) {
+		this.adicionarItem(new Item(nome, quantidade, preco));
+	}
+	
+	void adicionarItem(Item item) {
+		this.itens.add(item);
+		item.compra = this;
+	}
+	
+	double obterPrecoTotal() {
+		double soma = 0;
+		for (Item i: itens)
+			soma += i.quantidade * i.preco;
+		return soma;
+	}
 }

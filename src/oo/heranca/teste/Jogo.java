@@ -2,34 +2,38 @@ package oo.heranca.teste;
 
 import oo.heranca.Direcao;
 import oo.heranca.Heroi;
-import oo.heranca.Mostro;
+import oo.heranca.Monstro;
 
 public class Jogo {
-    public static void main(String[] args) {
-        Mostro mostro = new Mostro();
-        mostro.x = 10;
-        mostro.y = 10;
 
-        Heroi heroi = new Heroi(10,11);
-//        heroi.x = 10;
-//        heroi.y = 11;
+	public static void main(String[] args) {
+		
+		Heroi heroi = new Heroi(10, 10);
+		Monstro monstro = new Monstro(11, 11);
+		
+		System.out.println("Heroi:   " + heroi.x + " " + heroi.y + " " + heroi.vida);
+		System.out.println("Monstro: " + monstro.x + " " + monstro.y + " " + monstro.vida);
+		System.out.println();
+		
+		System.out.println("Herói ataca Monstro: " + heroi.atacar(monstro));
+		System.out.println("Heroi:   " + heroi.x + " " + heroi.y + " " + heroi.vida);
+		System.out.println("Monstro: " + monstro.x + " " + monstro.y + " " + monstro.vida);
+		System.out.println();
+				
+		System.out.println("Herói anda para SUL: " + heroi.andar(Direcao.SUL));
+		System.out.println("Heroi:   " + heroi.x + " " + heroi.y + " " + heroi.vida);
+		System.out.println("Monstro: " + monstro.x + " " + monstro.y + " " + monstro.vida);
+		System.out.println();
+		
+		System.out.println("Herói ataca Monstro: " + heroi.atacar(monstro));
+		System.out.println("Heroi:   " + heroi.x + " " + heroi.y + " " + heroi.vida);
+		System.out.println("Monstro: " + monstro.x + " " + monstro.y + " " + monstro.vida);
+		System.out.println();
 
-
-        System.out.println("Monstro tem => " + mostro.vida);
-        System.out.println("HerÃ³i tem => " + heroi.vida);
-
-        mostro.atacar(heroi);
-        heroi.atacar(mostro);
-
-        mostro.atacar(heroi);
-        heroi.atacar(mostro);
-
-        mostro.andar(Direcao.NORTE);
-        mostro.atacar(heroi);
-        heroi.atacar(mostro);
-
-
-        System.out.println("Monstro tem => " + mostro.vida);
-        System.out.println("HerÃ³i tem => " + heroi.vida);
-    }
+		System.out.println("Monstro ataca Herói: " + monstro.atacar(heroi));
+		System.out.println("Heroi:   " + heroi.x + " " + heroi.y + " " + heroi.vida);
+		System.out.println("Monstro: " + monstro.x + " " + monstro.y + " " + monstro.vida);
+		System.out.println();
+		
+	}
 }
