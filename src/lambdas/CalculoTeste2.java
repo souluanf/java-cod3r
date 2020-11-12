@@ -14,7 +14,7 @@ public class CalculoTeste2 {
         BinaryOperator<Integer> calc2 = (x, y) -> { return x + y; }; // Com return pode haver mais de uma para
         System.out.println(calc2.apply(2,3));
 
-        calc = (x,y) -> x * y;
+        calc2 = (x,y) -> x * y;
         System.out.println(calc2.apply(2,3));
     }
 }
