@@ -1,15 +1,20 @@
 package lambdas;
 
+import java.util.function.BinaryOperator;
+
 public class CalculoTeste2 {
     public static void main(String[] args) {
-        Calculo calc = (x, y) -> { return x + y; }; // Com return pode haver mais de uma para
-        System.out.println(calc.executar(2,3));
+
+        BinaryOperator<Double> calc = (x, y) -> { return x + y; }; // Com return pode haver mais de uma para
+        System.out.println(calc.apply(2.0,3.0));
 
         calc = (x,y) -> x * y;
-        System.out.println(calc.executar(2,3));
+        System.out.println(calc.apply(2.0,3.0));
 
-        System.out.println(calc.legal());
+        BinaryOperator<Integer> calc2 = (x, y) -> { return x + y; }; // Com return pode haver mais de uma para
+        System.out.println(calc2.apply(2,3));
 
-        System.out.println(Calculo.muitoLegal());
+        calc = (x,y) -> x * y;
+        System.out.println(calc2.apply(2,3));
     }
 }
