@@ -29,4 +29,5 @@ public class Pares<C extends Number,V> {
 
         return parOpcional.isPresent()? parOpcional.get().getValor(): null;
     }
+
 }
